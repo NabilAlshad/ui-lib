@@ -2,6 +2,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Grid } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
+import InputBase from "@material-ui/core/InputBase";
 import Paper from "@material-ui/core/Paper";
 import SearchIcon from "@material-ui/icons/Search";
 import { makeStyles, styled } from "@material-ui/styles";
@@ -21,18 +22,23 @@ const AdminPart = styled("div")({
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: "5px 20px",
+    padding: "2px 10px",
     display: "flex",
-    marginLeft: "-80%",
-    borderRadius: "20px",
+    borderRadius: "30px",
     alignItems: "center",
+    marginLeft: "-80%",
     width: 500,
   },
   input: {
+    marginLeft: 10,
     flex: 1,
   },
   iconButton: {
     padding: 10,
+  },
+  divider: {
+    height: 28,
+    margin: 4,
   },
 }));
 
@@ -51,6 +57,7 @@ const HeaderNav = () => {
         {/* form field  */}
         <Grid item lg={4}>
           <Paper component="form" className={classes.root}>
+            <InputBase className={classes.input} />
             <IconButton
               type="submit"
               className={classes.iconButton}

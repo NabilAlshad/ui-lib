@@ -16,20 +16,7 @@ const SideNav = styled("div")({
   padding: "5%",
   height: "600vh",
 });
-// const styled=theme=>({
-//   IconStyle:{
-//     display: "block",
-//   fontSize: "25px",
-//   textAlign: "center",
-//   marginBottom: "20px",
-//   cursor: "pointer",
-//   color: "white",
-//   '&:hover': {
-//     background: "#f00",
-//  },
-//   },
 
-// })
 const IconStyle = styled("a")({
   display: "block",
   fontSize: "20px",
