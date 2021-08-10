@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import { styled } from "@material-ui/styles";
-import Link from "next/Link";
+import Link from "next/link";
 import {
   BsBoundingBoxCircles,
   BsFillBarChartFill,
